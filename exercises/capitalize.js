@@ -1,4 +1,3 @@
-'use strict'
 
 /*
  * Create a `capitalize` function that takes a string
@@ -6,7 +5,11 @@
  * and in lowercase for the rest of the string
  *
  */
-
+function capitalize(str){
+    let STR=str[0].toUpperCase()
+    STR+=(str.slice(1)).toLowerCase()
+    return STR
+}
 
 //* Begin of tests
 const assert = require('assert')

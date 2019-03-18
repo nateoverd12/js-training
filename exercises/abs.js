@@ -1,4 +1,3 @@
-'use strict'
 
 /*
  * Create the `abs` function that takes one number argument
@@ -10,7 +9,13 @@
  */
 
 // Your code :
-
+function abs(nbr){
+    if (nbr<0){
+        return -nbr
+    } else {
+        return nbr
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 
