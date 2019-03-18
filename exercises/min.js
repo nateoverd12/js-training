@@ -10,7 +10,13 @@
  */
 
 // Your code :
-
+function min(nbr1,nbr2){
+    if (nbr1<nbr2){
+        return nbr1
+    } else {
+        return nbr2
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 

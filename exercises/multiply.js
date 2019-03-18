@@ -9,7 +9,23 @@
  */
 
 // Your code :
-
+function multiply(nb1,nb2){
+    let c=0
+    let res=0
+    while (c<Math.abs(nb1)){
+        c++
+        res+=Math.abs(nb2)
+    }
+    if (nb1<0 && nb2>0){
+        let signe='-'+res
+        return Number(signe)
+    } else if (nb1>0 && nb2<0){
+        let signe='-'+res
+        return Number(signe)
+    } else{
+        return res
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 

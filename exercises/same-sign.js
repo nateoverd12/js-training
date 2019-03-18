@@ -8,7 +8,15 @@
  */
 
 // Your code :
-
+function sameSign(nbr1,nbr2){
+    if (nbr1*nbr2>0){
+        return true
+    } else if (nbr1==0 && nbr2==0){
+        return true
+    } else {
+        return false
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 

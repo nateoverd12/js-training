@@ -8,7 +8,13 @@
  */
 
 // Your code:
-
+function isPositive(nbr){
+    if (nbr>0){
+        return true
+    } else {
+        return false
+    }
+}
 
 //* Begin of tests
 const assert = require('assert')
