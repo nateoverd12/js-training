@@ -10,7 +10,32 @@
  */
 
 // Your code :
-
+function multiply(nb1,nb2){
+    if (nb1>0){
+        if (nb1>0){
+            nb1-=1
+            return (nb2 + multiply(nb1,nb2))
+        } else {
+            return 0
+        }
+    } else if (nb1<0 && nb2>0){
+        if (nb1<0){
+            nb1+=1
+            return (-nb2 + multiply(nb1,nb2))
+        } else {
+            return 0
+        }
+    } else if (nb1<0 && nb2<0){
+        if (nb1<0){
+            nb1+=1
+            return (-nb2 + multiply(nb1,nb2))
+        } else {
+            return 0
+        }
+    } else {
+        return(0)   
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 
@@ -21,11 +46,11 @@ assert.strictEqual(multiply.toString().includes('while'), false)
 assert.strictEqual(multiply.toString().includes('for'), false)
 assert.strictEqual(multiply.toString().includes('*'), false)
 assert.strictEqual(multiply.toString().includes('/'), false)
-assert.strictEqual(multiply(34, 78), 2652)
+assert.strictEqual(multiply(34, 78), 2652) //
 assert.strictEqual(multiply(123, 0), 0)
 assert.strictEqual(multiply(0, -230), 0)
 assert.strictEqual(multiply(0, 0), 0)
-assert.strictEqual(multiply(123, -22), -2706)
-assert.strictEqual(multiply(-22, 123), -2706)
-assert.strictEqual(multiply(-22, -123), 2706)
+assert.strictEqual(multiply(123, -22), -2706) //
+assert.strictEqual(multiply(-22, 123), -2706) //
+assert.strictEqual(multiply(-22, -123), 2706) //
 // End of tests */
